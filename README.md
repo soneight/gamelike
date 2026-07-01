@@ -1,5 +1,5 @@
-# TEMPLATE
-> Project Legend
+# GAMELIKE
+> Resemble Role Playing Games
 
 Project Overview
 
