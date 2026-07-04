@@ -1,6 +1,13 @@
 # CONTRIBUTING
 > all source code files must end with license and copyright notices to ensure compliance with the GNU Affero General Public License v3.0 or later
 
+## Ignore
+
+### Engine
+> files inside `source/engine` directory
+
+Some the parts of engine related code could be changed to other license, so direct contributions to source code under `source/engine` subdirectory via pull request would be ignored, just suggest possible solution using issues or consider doing workaround for a specific application outside of engine realm.
+
 ## Contributor
 > anyone who submits source code changes for inclusion by the Licensor
 
