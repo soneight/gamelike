@@ -51,33 +51,8 @@ This robotic nature is significantly ease the process of modeling and animating 
 - `WAR` (`Vjuina`): _different robotic factions begin battles `among` each other that leads to a great `wildfire`_
 - `RED` (`Krov`): _after never stopping battles the world is now a mix of small groups of different entities, robotic hero faces the ultimate choice restoring real humans that leads to `death` of robots, or let the robots continue their `ethereal` existence_
 
-## Tech
-> OpenGL from 1.1 to 4.6 of none(00), compatibility(CB) and core(CE)
-
-Launcher should run on OpenGL 1.1
-
-Each game should be assign to one of OpenGL version: 1.5(00), 2.1(00), 3.3(CB), 3.3(CE), 4.3(CB), 4.3(CE), 4.6(CB), 4.6(CE)
-
-GLFW for window creating and event handling
-
-### Basic Blocks
-> Scene Emote Actor (SEA) scheme
-
-- `Scene`: _Object-Oriented Design_
-- `Emote`: _Fixed C++ or Lua Scripts_
-- `Actor`: _Data-Oriented Design in some form of Entity Component Systems (ECS)_
-
-### Threads
-> special systems that should be created on separate thread
-
-- `Action`: _main thread window creating and event handling (maybe also scripting and gui, etc)_
-- `Direct`: _planner or schedular, data translator between threads below:_
-  - `Visual`: _drawing and rendering related animations_
-  - `Melody`: _audio processing_
-  - `Motion`: _physics and physics related animation_
-  - `Spirit`: _artificial intelligence_
-  - `Stream`: _file processing, loading resources_
-  - `Server`: _networking (even offline games should work through localhost interaction)_
+## [SOURCE](./source/README.md)
+> Source Code related information
 
 ## [CONTRIBUTING](./CONTRIBUTING.md)
 > Project Contribution Rules
