@@ -1,8 +1,10 @@
 #ifndef APP_HXX
 #define APP_HXX
-
+// son8
+#include <son8/main.hxx>
+// std
 #include <cassert>
-
+// special app debug assert macros
 #ifndef APP_DEBUG
 #define APP_ASSERT( check ) ( (void)0 )
 #define APP_ASSERT_MSG( check, msg ) ( (void)0 )

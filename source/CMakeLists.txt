@@ -5,6 +5,19 @@ set( CMAKE_CXX_EXTENSIONS OFF )
 add_executable( ${APP} )
 target_sources( ${APP} PRIVATE main.cxx )
 target_compile_options( ${APP} PRIVATE $<$<CXX_COMPILER_ID:MSVC>:/utf-8 /permissive- /Zc:__cplusplus> )
+# son8 libraries
+include( FetchContent )
+
+message( STATUS "${APP}: FetchContent `soneight/mainland`" )
+fetchcontent_declare(
+   son8__mainland
+   GIT_REPOSITORY https://github.com/soneight/mainland.git
+   GIT_TAG        06e8a764454a7d245628a25e775324a0a40fc92a # v0.1.0
+)
+fetchcontent_makeavailable( son8__mainland )
+message( STATUS "${APP}: found `son8__mainland` target" )
+
+target_link_libraries( ${APP} PRIVATE son8::mainland )
 
 # GNU Affero General Public License v3.0 or later
 # NO WARRANTY OF ANY KIND more details at <https://www.gnu.org/licenses/>
