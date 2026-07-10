@@ -1,7 +1,7 @@
 #ifndef APP_HXX
 #define APP_HXX
 // son8
-#include <son8/main.hxx>
+#include <son8/windowed/window.hxx>
 // std
 #include <cassert>
 // special app debug assert macros
@@ -13,8 +13,14 @@
 #define APP_ASSERT_MSG( check, msg ) assert( check && msg )
 #endif//APP_DEBUG
 
-namespace app {
+#ifdef APP_ERROR
+#define APP_SKIP [[maybe_unused]]
+#else
+#define APP_SKIP
+#endif
 
+namespace app {
+   using son8::windowed::Window;
 } // namespace app
 
 #endif//APP_HXX

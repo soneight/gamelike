@@ -17,7 +17,16 @@ fetchcontent_declare(
 fetchcontent_makeavailable( son8__mainland )
 message( STATUS "${APP}: found `son8__mainland` target" )
 
-target_link_libraries( ${APP} PRIVATE son8::mainland )
+message( STATUS "${APP}: FetchContent `soneight/windowed`" )
+fetchcontent_declare(
+   son8__windowed
+   GIT_REPOSITORY https://github.com/soneight/windowed.git
+   GIT_TAG        7d868530179b93cafeb189847e3a9a0adecf3fd2 # v0.5.0
+)
+fetchcontent_makeavailable( son8__windowed )
+message( STATUS "${APP}: found `son8__windowed` target" )
+
+target_link_libraries( ${APP} PRIVATE son8::mainland son8::windowed glfw::son8 )
 
 # GNU Affero General Public License v3.0 or later
 # NO WARRANTY OF ANY KIND more details at <https://www.gnu.org/licenses/>

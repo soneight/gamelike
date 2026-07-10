@@ -34,6 +34,9 @@ Dependencies:
 ---- mainland
 soneight/mainland C++17 Main Function Wrapper
 Ⓒ Copyright (c) 2025-2026 Oleg'Ease'Kharchuk ᦒ
+---- windowed
+soneight/windowed C++17 Overglad GLFW Based Window
+Ⓒ Copyright (c) 2025-2026 Oleg'Ease'Kharchuk ᦒ
 ---- NOTICE FROM ALL SONEIGHT DEPENDENCIES THAT LISTED ABOVE
     This project is licensed under the Apache License, Version 2.0.
     Full license text is available in the root LICENSE file.

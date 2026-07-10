@@ -4,7 +4,9 @@
         "name": "local-base_",
         "hidden": true,
         "cacheVariables": {
-            "FETCHCONTENT_SOURCE_DIR_{TARGET_NAME}": "/path/to/target/source/directory"
+            "FETCHCONTENT_SOURCE_DIR_SON8__MAINLAND": "/path/to/target/source/directory",
+            "FETCHCONTENT_SOURCE_DIR_SON8__OVERGLAD": "/path/to/target/source/directory",
+            "FETCHCONTENT_SOURCE_DIR_SON8__WINDOWED": "/path/to/target/source/directory"
         }
     }, {
         "name": "local-debug_",
