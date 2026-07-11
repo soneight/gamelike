@@ -1,8 +1,9 @@
 #ifndef APP_HXX
 #define APP_HXX
-// son8
+// `son8`
+#include <son8/core.hxx>
 #include <son8/windowed/window.hxx>
-// std
+// `std`
 #include <cassert>
 // special app debug assert macros
 #ifndef APP_DEBUG
@@ -23,7 +24,7 @@ namespace app {
    using son8::windowed::Window;
 } // namespace app
 
-#endif//APP_HXX
+#endif// header
 
 // GNU Affero General Public License v3.0 or later
 // NO WARRANTY OF ANY KIND more details at <https://www.gnu.org/licenses/>

@@ -8,6 +8,15 @@ target_compile_options( ${APP} PRIVATE $<$<CXX_COMPILER_ID:MSVC>:/utf-8 /permiss
 # son8 libraries
 include( FetchContent )
 
+message( STATUS "${APP}: FetchContent `soneight/core_lib`" )
+fetchcontent_declare(
+   son8__core_lib
+   GIT_REPOSITORY https://github.com/soneight/core_lib.git
+   GIT_TAG        ee64c145081c9f8610a12f9373641ac477ac4bf2 # v0.0.3
+)
+fetchcontent_makeavailable( son8__core_lib )
+message( STATUS "${APP}: found `son8__core_lib` target" )
+
 message( STATUS "${APP}: FetchContent `soneight/mainland`" )
 fetchcontent_declare(
    son8__mainland
@@ -26,7 +35,7 @@ fetchcontent_declare(
 fetchcontent_makeavailable( son8__windowed )
 message( STATUS "${APP}: found `son8__windowed` target" )
 
-target_link_libraries( ${APP} PRIVATE son8::mainland son8::windowed glfw::son8 )
+target_link_libraries( ${APP} PRIVATE son8::core_lib son8::mainland son8::windowed glfw::son8 )
 
 # GNU Affero General Public License v3.0 or later
 # NO WARRANTY OF ANY KIND more details at <https://www.gnu.org/licenses/>
