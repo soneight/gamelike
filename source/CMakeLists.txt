@@ -30,7 +30,7 @@ message( STATUS "${APP}: FetchContent `soneight/windowed`" )
 fetchcontent_declare(
    son8__windowed
    GIT_REPOSITORY https://github.com/soneight/windowed.git
-   GIT_TAG        7d868530179b93cafeb189847e3a9a0adecf3fd2 # v0.5.0
+   GIT_TAG        3d06e8a0f16e08f3c7344958ad151ba191aa844a # v0.5.1
 )
 fetchcontent_makeavailable( son8__windowed )
 message( STATUS "${APP}: found `son8__windowed` target" )

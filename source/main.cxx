@@ -14,7 +14,7 @@ void son8::main( APP_SKIP Args args ) try {
    using namespace std::chrono_literals;
    using Cfg = windowed::Config;
    using OpenGL = windowed::OpenGL;
-   Cfg windowConfig{ Cfg::Version{ OpenGL::Vx010100 } };
+   Cfg windowConfig{ Cfg::Version{ OpenGL::Vx010100 }, Cfg::LingerUS{ 468 } };
    app::Window window{ windowConfig };
 
    static Ref< app::Window > windowRef = window;
@@ -34,8 +34,8 @@ void son8::main( APP_SKIP Args args ) try {
       });
    }};
 
-   window.run_poll( []( ) -> void {
-      std::this_thread::sleep_for( 1ms );
+   window.run< app::Window::Without::Poll_Linger >( []( ) -> void {
+
    });
 
    draw.join( );
