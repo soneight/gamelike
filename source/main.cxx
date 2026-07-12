@@ -34,7 +34,7 @@ void son8::main( APP_SKIP Args args ) try {
       });
    }};
 
-   window.run< app::Window::Without::Poll_Linger >( []( ) -> void {
+   window.run_poll( []( ) -> void {
 
    });
 
