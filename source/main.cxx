@@ -11,23 +11,24 @@
 void son8::main( APP_SKIP Args args ) try {
    APP_ASSERT_MSG( args.size( ) == 1, "argc must contain one argument" );
    using namespace core;
-   using namespace std::chrono_literals;
+   using namespace cxx::chrono_literals;
    using Cfg = windowed::Config;
    using OpenGL = windowed::OpenGL;
+   using Thread = cxx::thread;
    Cfg windowConfig{ Cfg::Version{ OpenGL::Vx010100 }, Cfg::LingerUS{ 468 } };
    app::Window window{ windowConfig };
 
-   static Ref< app::Window > windowRef = window;
+   static Ref< app::Window > refWindow = window;
    glfwSetKeyCallback( window, []( APP_SKIP Ptr< GLFWwindow > w, int key, APP_SKIP int scancode, int action, int mods ) {
       switch ( mods ) {
       case GLFW_MOD_CONTROL: {
-         if ( key == GLFW_KEY_ESCAPE and action == GLFW_PRESS ) windowRef.close( );
+         if ( key == GLFW_KEY_ESCAPE and action == GLFW_PRESS ) refWindow.close( );
       } break;
          default: break;
       }
    });
 
-   std::thread draw{ [&window]( ) {
+   Thread draw{ [&window]( ) {
       window.run_swap( []( ) {
          glClearColor( .125f, .125f, .125f, 1.f );
          glClear( GL_COLOR_BUFFER_BIT );
@@ -41,7 +42,7 @@ void son8::main( APP_SKIP Args args ) try {
    draw.join( );
    Exit::Edit::success( );
 } catch ( core::Ref< cxx::exception > e ) {
-   std::cerr << "gamelike: cxx::exception: " << e.what( ) << '\n';
+   std::cerr << "gamelike: std::exception: " << e.what( ) << '\n';
 } catch ( ... ) {
    std::cerr << "gamelike: ... exception" << '\n';
    throw;
