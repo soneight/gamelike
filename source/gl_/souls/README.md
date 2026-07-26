@@ -14,28 +14,28 @@ as based mainly on `Dark Souls 2` there several major changes:
 clusters
 
 - Tank (red):
-  - `Vigor`: health points capacity
-  - `Strength` (`DS2: Strength`): heavy weapons bonus
-  - `Vitality` (`DS2: Vitality`): armor bonus related
+  - `Vigor` (`TODO: Rename`): health points
+  - `Strength`: heavy weapons bonus
+  - `Vitality`: armor bonus related
 - Dual (green):
-  - `Endurance`: endurance points capacity
+  - `Endurance` (`TODO: Rename`): endurance points
   - `Legerity` (`DS2: Dexterity`): light weapons bonus
-  - `Adaptability` (hidden): based on overall character level and `Dual:hidden` to `Tank:Vitality+Mage:Charisma` relation
+  - `DS2: Adaptability` (hidden): based on overall character level and `Dual:hidden` to `Tank:Vitality+Mage:Charisma` relation
 - Mage (blue):
-  - `Attunement`: power (magic) points capacity
-  - `Intelligence`: magic weapons bonus
+  - `Capacity` (`DS2: Attunement`): power (magic) points
+  - `Aptitude` (`DS2: Intelligence`): magic weapons bonus
   - `Charisma` (`DS2: Faith`): need to rework
 
 ### Damage types
 
-- `Pure`: physical base (fists of claws?)
+- `Brute` (white): physical base
   - `Slash` (red): status bleed
-  - `Thrust(TODO:rename)` (green): status poison
-  - `Strike(TODO:rename)` (blue): status stun
-- Dark: elemental base (wands or sticks?)
-  - `Flame` (yellow): status burn
+  - `Lance` (green): status poison
+  - `Crush` (blue): status stun
+- `Magic` (gray): elemental base
+  - `Flame` (yellow): status burns
   - `Frost` (cyan): status chill
-  - `Light` (magenta): status shock
+  - `Spark` (magenta): status shock
 
 ### Weapon types
 
