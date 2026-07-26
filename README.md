@@ -3,8 +3,6 @@
 
 ## Games
 
-Each game should support some kind of multiplayer, but can also be played without internet connection
-
 Should contain launcher application to run:
 
 - `Rogue-like`: _progression RPG_; base: **Rogue (1980)**
@@ -16,7 +14,12 @@ Should contain launcher application to run:
 - `Souls-like`: _third-person action RPG like dark souls series;_ base: **Dark Souls 2 (2014)**
 - `Magic-like`: _collection card like hearthstone or magic arena;_ base: **Magic The Gathering Arena (2019)**
 
-## Story
+### Notes
+
+- there no endgame mechanics or notion of expansions, just polished overtime campaign that support some kind of multiplayer and offline modes
+- all games should be in same visual style: medieval (or renaissance without gunpowder) dark fantasy as a base
+
+## Lore
 > Raimenals (`Reproducible Artificial Intelligence MEN ALike` in plural form) is "next generation" of humans
 
 Era zero is transition period, reason of human disappearance is not fully known and used as `easter eggs` for games from era I to VIII.
