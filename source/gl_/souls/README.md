@@ -13,18 +13,20 @@ as based mainly on `Dark Souls 2` there several major changes:
 
 clusters
 
-- Tank (red):
-  - `Vigor` (`TODO: Rename`): health points
+- `Tank` (red cluster): Body - Force and
+  - `Physique`: body resource - health points, replaces `Vigor`
   - `Strength`: heavy weapons bonus
   - `Vitality`: armor bonus related
-- Dual (green):
-  - `Endurance` (`TODO: Rename`): endurance points
-  - `Legerity` (`DS2: Dexterity`): light weapons bonus
-  - `DS2: Adaptability` (hidden): based on overall character level and `Dual:hidden` to `Tank:Vitality+Mage:Charisma` relation
-- Mage (blue):
-  - `Capacity` (`DS2: Attunement`): power (magic) points
-  - `Aptitude` (`DS2: Intelligence`): magic weapons bonus
-  - `Charisma` (`DS2: Faith`): need to rework
+- `Dual` (green cluster): Mind - Precision and Survivability
+  - `Tenacity`: mind resource - endurance points, replaces `Endurance`
+  - `Legerity`: light weapons bonus, replaces `Dexterity`
+  - `Immunity`: hidden, based on overall character level replaces `Adaptability`
+- `Mage` (blue cluster): Soul - Intellect and Spirit
+  - `Presense`: soul resource - power (magic) points, replaces `Attunement`
+  - `Aptitude`: magic weapons bonus, replaces `Intelligence`
+  - `Sanctity`: need to rework, replaces `Faith`
+
+There only eight attributes, `Immunity` is hidden and determined based on character level and `Dual` sum (`Tenacity + Legerity`) to `Tank:Vitality+Mage:Sanctity` relation formula, cannot see and put points in it on level ups
 
 ### Damage types
 
@@ -37,5 +39,8 @@ clusters
   - `Frost` (cyan): status chill
   - `Spark` (magenta): status shock
 
-### Weapon types
+### Classes
 
+- should be one class that starts on `1st` level with all attributes equal to `8`, other classes would make changes to this base
+
+### Weapon types
