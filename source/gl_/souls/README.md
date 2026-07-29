@@ -13,7 +13,7 @@ as based mainly on `Dark Souls 2` there several major changes:
 
 clusters
 
-- `Tank` (red cluster): Body - Force and
+- `Tank` (red cluster): Body - Force and Fortitude
   - `Physique`: body resource - health points, replaces `Vigor`
   - `Strength`: heavy weapons bonus
   - `Vitality`: armor bonus related

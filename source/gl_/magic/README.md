@@ -1,11 +1,11 @@
 ## MAGIC
 
 ### Archetypes
-> each of listed archetypes would be have hero with same name, mono would have two heroes
+> each of listed archetypes have hero with same name, mono have two heroes
 
 Likes are formed based on earlier versions of inspirational games
 
-- `Control` (White): like `esper` but assembles just `black+white` mechanics from `MTG` or `Warrior` from `HS`
+- `Control` (Gray): like `dimir` + `azorius` but assembles just `black+white` mechanics from `MTG` or `Warrior` from `HS`
 - `Burn/Face` (Red): like `mono-red` from `MTG` or `Hunter` form `HS`
 - `Ramp/Grow` (Green): like `mono-green` from `MTG` or `Druid` from `HS`
 - `Draw/Mill` (Blue): like `mono-blue` from `MTG` or `Warlock` from `HS`
